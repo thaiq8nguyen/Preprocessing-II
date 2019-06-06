@@ -181,7 +181,7 @@ img {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 0.8rem dashed silver;
   background: #FFEBCD;
 }
 .footer p {
@@ -254,7 +254,7 @@ img {
     margin-bottom: 4rem;
   }
   .home .main-content .content-pick .destination h4 {
-    font-size: 3.4rem;
+    font-size: 3.8rem;
     margin: 2rem 0;
   }
   .home .main-content .content-pick .destination p {
@@ -264,8 +264,8 @@ img {
     border: 1rem solid transparent;
     font-size: 3rem;
     color: white;
-    background: teal;
-    border-radius: 10px;
+    background: #33CCCC;
+    border-radius: 3rem;
     text-align: center;
     padding: 1rem 3rem;
   }
