@@ -168,46 +168,42 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav-bar {
+.home .header {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
-  margin-bottom: 2rem;
 }
-.nav-bar .nav-item {
+.home .header .nav-bar .nav-item {
   text-decoration: none;
-  font-size: 2.5rem;
   color: black;
 }
-.footer {
-  width: 100%;
-  border-top: 0.8rem dashed silver;
-  background: #FFEBCD;
+.home .main-content .intro {
+  padding-bottom: 2rem;
+  border-bottom: 0.5rem dashed grey;
 }
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
+.home .main-content .content-pick {
+  display: flex;
 }
 @media (min-width: 500px) {
   .home .header {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    border-bottom: 0.5rem dashed grey;
+    border-bottom: 0.5rem dashed silver;
   }
   .home .header h1 {
     font-size: 7rem;
     text-align: center;
     margin: 2rem 0;
   }
+  .home .header .nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+  .home .header .nav-bar .nav-item {
+    font-size: 2.5rem;
+  }
   .home .main-content {
     margin: 0 2rem;
-  }
-  .home .main-content .intro {
-    padding-bottom: 2rem;
-    border-bottom: 0.5rem dashed grey;
   }
   .home .main-content .intro > h2 {
     font-size: 4.4rem;
@@ -246,7 +242,6 @@ img {
     padding-bottom: 4rem;
   }
   .home .main-content .content-pick {
-    display: flex;
     flex-direction: column;
     margin: 0 6rem;
   }
@@ -264,9 +259,112 @@ img {
     border: 1rem solid transparent;
     font-size: 3rem;
     color: white;
-    background: #33CCCC;
+    background: darkcyan;
     border-radius: 3rem;
     text-align: center;
     padding: 1rem 3rem;
+  }
+  .home footer {
+    width: 100%;
+    border-top: 0.8rem dashed silver;
+    background: #FFEBCD;
+  }
+  .home footer p {
+    text-align: center;
+    color: #212529;
+    font-size: 1.6rem;
+    padding: 20px;
+  }
+}
+@media (min-width: 800px) {
+  .home .header {
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 0.3rem dashed silver;
+  }
+  .home .header h1 {
+    font-size: 4rem;
+    flex: 1;
+    text-align: left;
+  }
+  .home .header .nav-bar {
+    display: flex;
+    flex: 1;
+    padding-right: 6rem;
+  }
+  .home .header .nav-bar .nav-item {
+    font-size: 1.8rem;
+  }
+  .home .main-content {
+    margin: 0 4rem;
+  }
+  .home .main-content .intro > h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .home .main-content .intro > p {
+    font-size: 2rem;
+  }
+  .home .main-content .activities .activity-content {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  .home .main-content .activities .activity-content .text-content {
+    flex: 1;
+  }
+  .home .main-content .activities .activity-content .img-content {
+    flex: 1;
+  }
+  .home .main-content .activities .activity-content:nth-child(2) .text-content {
+    order: 2;
+    padding-left: 4rem;
+  }
+  .home .main-content .activities .activity-content:nth-child(2) .img-content {
+    order: 1;
+  }
+  .home .main-content .activities .activity-content:nth-child(1) .text-content {
+    order: 1;
+    padding-right: 4rem;
+  }
+  .home .main-content .activities .activity-content:nth-child(1) .img-content {
+    order: 2;
+  }
+  .home .main-content .activities .activity-content:last-child {
+    flex-direction: column;
+    padding: 0 7rem;
+    border-top: 0.3rem dashed silver;
+    border-bottom: 0.3rem dashed silver;
+    padding-bottom: 3rem;
+  }
+  .home .main-content .content-pick {
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .home .main-content .content-pick .destination {
+    width: 28%;
+  }
+  .home .main-content .content-pick .destination h4 {
+    font-size: 2.6rem;
+  }
+  .home .main-content .content-pick .destination .sign-up-btn {
+    border: 1rem solid transparent;
+    font-size: 1.8rem;
+    color: white;
+    background: darkcyan;
+    border-radius: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .home .footer {
+    border-top: 0.3rem dashed silver;
+    width: 100%;
+    background: #FFEBCD;
+  }
+  .home .footer p {
+    text-align: center;
+    color: #212529;
+    font-size: 1.6rem;
+    padding: 20px;
   }
 }

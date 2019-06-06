@@ -1,13 +1,22 @@
 // Navigation Styles here
-.nav-bar {
+.nav-bar-mobile() {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     margin-bottom: 2rem;
-    .nav-item {
-        text-decoration: none;
-        font-size: 2.5rem;
-        color: black;
+    .nav-item { 
+        font-size: 2.5rem;    
     }
     
+}
+
+.nav-bar-desktop() {
+    display: flex;
+    flex: 1;
+    padding-right: 6rem;
+    //justify-content: space-between;
+    
+    .nav-item{
+        font-size: 1.8rem;
+    }    
 }
