@@ -286,6 +286,7 @@ img {
     font-size: 4rem;
     flex: 1;
     text-align: left;
+    margin-left: 4rem;
   }
   .home .header .nav-bar {
     display: flex;
