@@ -183,6 +183,16 @@ img {
 .home .main-content .content-pick {
   display: flex;
 }
+.home .footer {
+  width: 100%;
+  background: #FFEBCD;
+}
+.home .footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
 @media (min-width: 500px) {
   .home .header {
     flex-direction: column;
@@ -265,15 +275,7 @@ img {
     padding: 1rem 3rem;
   }
   .home footer {
-    width: 100%;
     border-top: 0.8rem dashed silver;
-    background: #FFEBCD;
-  }
-  .home footer p {
-    text-align: center;
-    color: #212529;
-    font-size: 1.6rem;
-    padding: 20px;
   }
 }
 @media (min-width: 800px) {
@@ -359,13 +361,5 @@ img {
   }
   .home .footer {
     border-top: 0.3rem dashed silver;
-    width: 100%;
-    background: #FFEBCD;
-  }
-  .home .footer p {
-    text-align: center;
-    color: #212529;
-    font-size: 1.6rem;
-    padding: 20px;
   }
 }

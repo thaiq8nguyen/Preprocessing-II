@@ -12,6 +12,7 @@
     }
     
   }
+
   .main-content {
     .intro {
       padding-bottom: 2rem;
@@ -20,6 +21,17 @@
     }
     .content-pick {
       display: flex;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    background: @sandy-beach;
+    p {
+        text-align: center;
+        color: @font-color;
+        font-size: 1.6rem;
+        padding: 20px; 
     }
   }
   
@@ -112,7 +124,7 @@
       }
     }
     footer {
-      .footer-mobile();
+      .footerFunction(@mobile-footer-border-size);
     }
   }
   
@@ -208,7 +220,7 @@
       }
     }
     .footer {
-      .footerDesktop();
+      .footerFunction(@desktop-footer-border-size);
     }
   }
 }
